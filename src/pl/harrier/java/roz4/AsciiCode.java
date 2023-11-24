@@ -6,6 +6,7 @@ public class AsciiCode {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         boolean go = true;
+
         while (go) {
             System.out.print("""
                     Wybierz w którą stronę chcesz tłumaczyć kod:
