@@ -16,8 +16,13 @@ public class StackOfIntegers {
         return size <= 0;
     }
 
-    public void push(int valaue) {
-        elements[size] = valaue;
+    public void push(int value) {
+        if (elements.length >= size) {
+            int[] temp = new int[elements.length * 2];
+            System.arraycopy(elements, 0, temp, 0, elements.length);
+            elements = temp;
+        }
+        elements[size] = value;
         size++;
     }
 
@@ -28,5 +33,9 @@ public class StackOfIntegers {
 
     public int getSize() {
         return size;
+    }
+
+    public int peek() {
+        return elements[size - 1];
     }
 }
