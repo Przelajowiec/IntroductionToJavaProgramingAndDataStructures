@@ -17,7 +17,7 @@ public class StackOfIntegers {
     }
 
     public void push(int value) {
-        if (elements.length >= size) {
+        if (elements.length <= size) {
             int[] temp = new int[elements.length * 2];
             System.arraycopy(elements, 0, temp, 0, elements.length);
             elements = temp;

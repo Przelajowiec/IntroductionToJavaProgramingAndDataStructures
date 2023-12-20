@@ -5,7 +5,7 @@ public class TestStackOfIntegers {
 
         StackOfIntegers stack = new StackOfIntegers();
 
-        for (int i = 0; i < 23; i++) {
+        for (int i = 0; i < 50; i++) {
             stack.push(i);
         }
 
